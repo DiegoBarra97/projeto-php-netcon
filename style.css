@@ -1,0 +1,48 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.anosluz, .km {
+    padding: 80px;
+    border: 5px solid rgb(0, 136, 255);
+    margin: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main input{
+
+    width: 250px;
+
+}
+
+button {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column; 
+    }
+
+    .anosluz, .km {
+        width: 100%;
+        padding: 20px;
+        margin: 20px; 
+    }
+
+    @media (max-width: 480px) {
+        .main {
+            flex-direction: column; 
+        }
+
+        .anosluz, .km {
+            padding: 10px; 
+            margin: 10px; 
+        }
+    }
+}
